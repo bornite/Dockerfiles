@@ -2,6 +2,8 @@
 ====
 
 ## Description
+A Dockerfile for creating an immutable ssh server.
+When you start the container, the sshd server with MFA authentication starts.
 
 ## Requirement
 
