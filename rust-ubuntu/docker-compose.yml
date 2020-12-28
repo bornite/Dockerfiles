@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rust-ubuntu:
+    restart: always
+    build: .
+    container_name: 'rust-ubuntu'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
+    environment:
+      TZ: Asia/Tokyo
