@@ -6,7 +6,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     RUST_VERSION=1.48.0
 
 RUN set -eux; \
-    apt-get update && apt-get install -y curl; \
+    apt-get update && apt-get install -y curl build-essential; \
     dpkgArch="$(dpkg --print-architecture)"; \
     case "${dpkgArch##*-}" in \
         amd64) rustArch='x86_64-unknown-linux-gnu'; rustupSha256='49c96f3f74be82f4752b8bffcf81961dea5e6e94ce1ccba94435f12e871c3bdb' ;; \
