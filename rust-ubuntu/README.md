@@ -2,8 +2,11 @@
 ====
 
 ## Description
+Dockerfile for building a Docker environment for Rust.
 
 ## Requirement
+- Docker (version 20.10 or later)
+- docker-compose (version 1.27.0 or later)
 
 ## Usage
 
