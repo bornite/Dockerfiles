@@ -9,6 +9,9 @@
 ## Usage
 
 - Start the container
+```
+bash ./build.sh TEX_SOURCE_FILE_NAME
+```
 
 - Login to the container
 
