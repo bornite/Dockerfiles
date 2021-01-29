@@ -14,7 +14,7 @@ $ docker-compose up -d --build
 
 - Login to the container
 ```
-$ docker-compose exec python3 bash
+$ docker-compose exec python37 bash
 ```
 
 - Delete the container
