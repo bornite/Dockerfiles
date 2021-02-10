@@ -3,6 +3,7 @@
 
 ## Description
 Dockerfile for building a Docker environment for Rust.
+Base OS is ubuntu 18.04 (bionic).
 
 ## Requirement
 - Docker (version 20.10 or later)
@@ -32,5 +33,4 @@ $ docker-compose down
 ## Licence
 
 ## Author
-
   - [bornite](https://github.com/bornite)
