@@ -11,8 +11,7 @@ RUN apk add --no-cache --virtual .gemBuild \
       'kelbim:0.3.1' \
       'miam:0.2.4' \
       'piculet:0.3.0' \
-      'roadworker:0.5.12' && \
+      'roadworker:0.5.14' && \
     apk del .gemBuild
 
 CMD sh -c 'ruby -v && kelbim -v && miam -v && piculet -v && roadwork -v'
-
