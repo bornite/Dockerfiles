@@ -1,0 +1,12 @@
+version: '3'
+services:
+  python39:
+    restart: always
+    build: .
+    container_name: 'python39'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
+    environment:
+      TZ: Asia/Tokyo
