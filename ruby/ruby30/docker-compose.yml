@@ -2,7 +2,9 @@ version: '3'
 services:
   ruby30:
     restart: always
-    build: .
+    build:
+      context: .
+      dockerfile: ./Dockerfile
     container_name: 'ruby30'
     working_dir: '/root/'
     tty: true
