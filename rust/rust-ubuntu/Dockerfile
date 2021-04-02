@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH \
-    RUST_VERSION=1.49.0
+    RUST_VERSION=1.50.0
 
 RUN set -eux; \
     apt-get update && apt-get install -y curl build-essential; \
@@ -15,7 +15,7 @@ RUN set -eux; \
         i386) rustArch='i686-unknown-linux-gnu'; rustupSha256='4473c18286aa1831683a772706d9a5c98b87a61cc014d38063e00a63a480afef' ;; \
         *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;; \
     esac; \
-    url="https://static.rust-lang.org/rustup/archive/1.22.1/${rustArch}/rustup-init"; \
+    url="https://static.rust-lang.org/rustup/archive/1.23.1/${rustArch}/rustup-init"; \
     curl -O "$url"; \
     echo "${rustupSha256} *rustup-init" | sha256sum -c -; \
     chmod +x rustup-init; \
