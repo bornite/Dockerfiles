@@ -1,0 +1,14 @@
+version: '3'
+services:
+  ruby-ubuntu:
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: 'ruby-ubuntu'
+    working_dir: '/root/'
+    tty: true
+    volumes:
+      - ./opt:/root/opt
+    environment:
+      TZ: Asia/Tokyo
